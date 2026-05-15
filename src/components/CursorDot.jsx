@@ -3,7 +3,7 @@ import { useReducedMotion } from '../hooks/useReducedMotion'
 
 export default function CursorDot() {
   const reduced = useReducedMotion()
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef(null)
   const [enabled, setEnabled] = useState(false)
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function CursorDot() {
     let tx = x
     let ty = y
 
-    const onMove = (e: MouseEvent) => {
+    const onMove = (e) => {
       tx = e.clientX
       ty = e.clientY
     }

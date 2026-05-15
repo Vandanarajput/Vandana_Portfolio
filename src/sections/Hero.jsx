@@ -127,15 +127,7 @@ export default function Hero() {
   )
 }
 
-function SocialIcon({
-  href,
-  label,
-  children,
-}: {
-  href: string
-  label: string
-  children: React.ReactNode
-}) {
+function SocialIcon({ href, label, children }) {
   return (
     <a
       href={href}

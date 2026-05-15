@@ -1,15 +1,6 @@
-import { Terminal, Code, Smartphone, type LucideIcon } from 'lucide-react'
+import { Terminal, Code, Smartphone } from 'lucide-react'
 
-export type ExperienceItem = {
-  role: string
-  company: string
-  period: string
-  description: string
-  icon: LucideIcon
-  dot: string
-}
-
-export const experience: ExperienceItem[] = [
+export const experience = [
   {
     role: 'Full Stack Developer',
     company: 'Techsapphire Solutions Pvt. Ltd.',

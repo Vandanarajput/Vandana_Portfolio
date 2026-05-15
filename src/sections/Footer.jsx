@@ -7,7 +7,7 @@ export default function Footer() {
         <div>© {new Date().getFullYear()} {profile.name}. All rights reserved.</div>
         <div className="font-mono">
           Built with <span className="text-zinc-300">React</span> ·{' '}
-          <span className="text-zinc-300">TypeScript</span> ·{' '}
+          <span className="text-zinc-300">JavaScript</span> ·{' '}
           <span className="text-zinc-300">Vite</span> ·{' '}
           <span className="text-zinc-300">Tailwind</span>
         </div>

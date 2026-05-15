@@ -1,14 +1,4 @@
-export type EducationItem = {
-  badge: string
-  degree: string
-  institution: string
-  result: string
-  year: string
-  description: string
-  accent: string
-}
-
-export const education: EducationItem[] = [
+export const education = [
   {
     badge: 'MCA',
     degree: 'Master of Computer Applications',

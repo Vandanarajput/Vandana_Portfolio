@@ -20,7 +20,7 @@ export default function Certifications() {
       <div className="grid gap-5 md:grid-cols-2">
         {certifications.map((c, idx) => {
           const Icon = c.icon
-          const CardTag: 'a' | 'div' = c.href ? 'a' : 'div'
+          const CardTag = c.href ? 'a' : 'div'
           return (
             <Reveal key={c.credentialId} delay={idx * 0.05}>
               <motion.div

@@ -1,15 +1,6 @@
-import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
-type Props = {
-  children: ReactNode
-  delay?: number
-  y?: number
-  className?: string
-  as?: 'div' | 'section' | 'article' | 'header' | 'footer'
-}
-
-export default function Reveal({ children, delay = 0, y = 24, className, as = 'div' }: Props) {
+export default function Reveal({ children, delay = 0, y = 24, className, as = 'div' }) {
   const Tag = motion[as]
   return (
     <Tag

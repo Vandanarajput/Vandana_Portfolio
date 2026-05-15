@@ -1,14 +1,4 @@
-export type Project = {
-  title: string
-  description: string
-  stack: string[]
-  href?: string
-  accent: string
-  badge?: string
-  proprietary?: boolean
-}
-
-export const projects: Project[] = [
+export const projects = [
   {
     title: 'MoBrowser — Enterprise Developer Browser',
     description:

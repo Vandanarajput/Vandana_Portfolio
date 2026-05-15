@@ -15,7 +15,7 @@ const capabilities = [
     icon: Monitor,
     label: 'Frontend',
     accent: 'from-cyan-400 to-blue-500',
-    items: ['React.js', 'TypeScript', 'Redux', 'Context API', 'Tailwind CSS'],
+    items: ['React.js', 'JavaScript', 'Redux', 'Context API', 'Tailwind CSS'],
   },
   {
     icon: Server,

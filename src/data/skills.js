@@ -3,7 +3,6 @@ import {
   Layers,
   Database,
   Wrench,
-  type LucideIcon,
   FileType,
   FileCode,
   Hexagon,
@@ -29,30 +28,18 @@ import {
   Workflow,
 } from 'lucide-react'
 
-export type SkillItem = {
-  name: string
-  icon: LucideIcon
-}
-
-export type SkillGroup = {
-  label: string
-  icon: LucideIcon
-  accent: string
-  items: SkillItem[]
-}
-
-export const skillGroups: SkillGroup[] = [
+export const skillGroups = [
   {
     label: 'Languages',
     icon: Code2,
     accent: 'from-cyan-400 to-blue-500',
     items: [
-      { name: 'TypeScript', icon: FileType },
       { name: 'JavaScript (ES6+)', icon: Zap },
       { name: 'Core Java', icon: Boxes },
       { name: 'C++', icon: Binary },
       { name: 'HTML5', icon: FileCode },
       { name: 'CSS3', icon: Hexagon },
+      { name: 'TypeScript', icon: FileType },
     ],
   },
   {
