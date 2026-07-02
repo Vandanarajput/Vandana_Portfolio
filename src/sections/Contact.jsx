@@ -4,7 +4,7 @@ import { profile } from '../data/profile'
 
 export default function Contact() {
   return (
-    <section id="contact" className="container-px py-20 sm:py-28">
+    <section id="contact" className="container-px py-12 sm:py-16">
       <Reveal>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">

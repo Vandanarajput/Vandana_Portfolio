@@ -4,7 +4,7 @@ import { experience } from '../data/experience'
 
 export default function Experience() {
   return (
-    <section id="experience" className="container-px py-20 sm:py-28">
+    <section id="experience" className="container-px py-12 sm:py-16">
       <Reveal>
         <div className="mb-12 flex items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-blue-600/30 to-violet-600/30 text-violet-300">

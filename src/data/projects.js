@@ -28,13 +28,23 @@ export const projects = [
     proprietary: true,
   },
   {
-    title: 'E-Commerce Web Application',
+    title: 'ShopSphere — MERN E-Commerce Platform',
     description:
-      'Full-stack e-commerce platform for user authentication, product browsing, cart, and order management. Backend services built with Spring Boot following MVC architecture and RESTful API design; user, product, and order data persisted in MySQL. Thymeleaf server-side rendering for views.',
-    stack: ['Java', 'Spring Boot', 'Thymeleaf', 'MySQL', 'REST', 'MVC'],
-    href: 'https://github.com/Vandanarajput',
+      'Production-style e-commerce app covering the full customer journey — browse, cart, checkout, and order tracking — plus a complete admin panel. Atomic stock decrement prevents overselling, cart price snapshots lock pricing between add-to-cart and checkout, and MongoDB text indexes power product search. JWT auth with role-based access (customer / admin / superAdmin), Cloudinary CDN for product images, and Zod-validated REST APIs. Deployed as separate frontend and backend serverless projects on Vercel.',
+    stack: [
+      'React 18',
+      'Redux Toolkit',
+      'Vite',
+      'Tailwind CSS',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'Cloudinary',
+    ],
+    href: 'https://shopsphere-web.vercel.app/',
     accent: 'from-violet-500 via-fuchsia-500 to-pink-500',
-    badge: 'Full-stack Java',
+    badge: 'MERN · Live on Vercel',
   },
   {
     title: 'Campus Placement Management',

@@ -3,7 +3,7 @@ import { skillGroups } from '../data/skills'
 
 export default function Skills() {
   return (
-    <section id="skills" className="container-px py-20 sm:py-28">
+    <section id="skills" className="container-px py-12 sm:py-16">
       <Reveal>
         <div className="mb-12 text-center">
           <h2 className="text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">
