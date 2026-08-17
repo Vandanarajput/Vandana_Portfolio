@@ -37,10 +37,20 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.05 }}
             className="text-5xl font-extrabold leading-[1.05] tracking-tight text-zinc-50 sm:text-6xl lg:text-7xl"
           >
+            Hi, I'm{' '}
             <span className="gradient-text bg-[length:200%_auto] animate-gradient-shift">
-              React.js Frontend Developer
+              Vandana
             </span>
           </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-4 text-xl font-semibold tracking-tight text-zinc-300 sm:text-2xl lg:text-3xl"
+          >
+            React.js Frontend Developer
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
