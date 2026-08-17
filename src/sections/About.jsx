@@ -1,5 +1,5 @@
 import {
-  Sparkles,
+  User,
   MapPin,
   Briefcase,
   Hammer,
@@ -33,11 +33,11 @@ const capabilities = [
 
 export default function About() {
   return (
-    <section id="about" className="container-px py-12 sm:py-16">
+    <section id="about" className="container-px pt-4 pb-6 sm:pt-6 sm:pb-8">
       <Reveal>
-        <div className="mb-12 flex items-center gap-3">
+        <div className="mb-8 flex items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-blue-600/30 to-violet-600/30 text-violet-300">
-            <Sparkles className="h-5 w-5" />
+            <User className="h-5 w-5" />
           </span>
           <h2 className="text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl">About Me</h2>
         </div>

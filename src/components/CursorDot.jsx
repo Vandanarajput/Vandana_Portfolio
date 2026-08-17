@@ -46,7 +46,7 @@ export default function CursorDot() {
     <div
       ref={ref}
       aria-hidden
-      className="pointer-events-none fixed left-0 top-0 z-[60] h-5 w-5 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500 opacity-60 mix-blend-screen blur-[3px]"
+      className="pointer-events-none fixed left-0 top-0 z-[60] h-5 w-5 rounded-full bg-gradient-to-br from-cyan-500 to-violet-500 opacity-60 blur-[3px] dark:mix-blend-screen"
     />
   )
 }

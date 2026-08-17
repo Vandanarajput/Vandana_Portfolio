@@ -4,7 +4,7 @@ import { profile } from '../data/profile'
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16">
+    <section id="top" className="relative overflow-hidden pt-28 pb-6 sm:pt-32 sm:pb-8">
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-30 [mask-image:radial-gradient(ellipse_at_center,black,transparent_60%)]" />
 
       <div

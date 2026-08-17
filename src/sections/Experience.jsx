@@ -25,7 +25,7 @@ export default function Experience() {
                     className={`absolute inset-0 rounded-full bg-gradient-to-br ${exp.dot} opacity-30 blur-md`}
                   />
                   <span
-                    className={`relative grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br ${exp.dot} text-white shadow-lg ring-4 ring-bg`}
+                    className={`relative grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br ${exp.dot} text-white shadow-lg ring-4 ring-white dark:ring-bg`}
                   >
                     <Icon className="h-4 w-4" />
                   </span>
@@ -44,7 +44,17 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-4 text-sm leading-relaxed text-zinc-400">{exp.description}</p>
+                  <ul className="mt-4 space-y-2 text-sm leading-relaxed text-zinc-400">
+                    {exp.bullets.map((b, i) => (
+                      <li key={i} className="flex gap-3">
+                        <span
+                          aria-hidden
+                          className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br ${exp.dot}`}
+                        />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </li>
             </Reveal>

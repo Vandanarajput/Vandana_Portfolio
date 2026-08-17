@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Download } from 'lucide-react'
+import { Download, Sun, Moon } from 'lucide-react'
 import { profile } from '../data/profile'
+import { useTheme } from '../hooks/useTheme'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -15,6 +16,7 @@ const links = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { theme, toggle } = useTheme()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -54,6 +56,13 @@ export default function Nav() {
         </ul>
 
         <div className="flex items-center gap-2">
+          <button
+            onClick={toggle}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/[0.03] text-zinc-200 transition-all hover:-translate-y-0.5 hover:border-violet-400/50 hover:bg-white/[0.06] hover:text-violet-200"
+          >
+            {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
           <a
             href={profile.links.resume}
             download="Vandana_Resume.pdf"
