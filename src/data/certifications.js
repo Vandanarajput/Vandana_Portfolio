@@ -30,12 +30,12 @@ export const certifications = [
   },
   {
     title: 'Java Programming for Complete Beginners',
-    issuer: 'Udemy · in28Minutes Official',
+    issuer: 'Udemy',
     type: 'Online Course',
     period: '42 hours · Completed 29 Mar 2025',
     credentialId: 'UC-2cb95a7d-89ce-4648-baa5-059b62d87266',
     description:
-      'In-depth Java fundamentals course covering OOP, core language features, and applied programming — 42 total hours. Issued by Udemy, taught by in28Minutes Official.',
+      'In-depth Java fundamentals course covering OOP, core language features, and applied programming — 42 total hours. Issued by Udemy.',
     href: `${BASE}certificates/java_udemy.png`,
     icon: Coffee,
     accent: 'from-amber-500 to-orange-600',

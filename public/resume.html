@@ -4,39 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vandana — Resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      html,
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+
       body {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        color: #18181b;
-        background: #f4f4f5;
-        font-size: 8.8pt;
-        line-height: 1.25;
+        font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+        color: #000;
+        background: #e5e7eb;
+        font-size: 11pt;
+        line-height: 1.28;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-      }
-
-      .page {
-        width: 8.27in;
-        height: 11.69in;
-        margin: 24px auto;
-        padding: 0.35in 0.45in;
-        background: #fff;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-        overflow: hidden;
       }
 
       .toolbar {
@@ -46,179 +25,102 @@
         background: #eef2ff;
         color: #1e3a8a;
         font-size: 12px;
-        border-radius: 8px;
+        border-radius: 6px;
         text-align: center;
       }
 
-      header.head {
-        border-bottom: 2px solid #3b82f6;
-        padding-bottom: 5px;
-        margin-bottom: 6px;
+      .page {
+        width: 8.27in;
+        min-height: 11.69in;
+        margin: 16px auto;
+        padding: 0.6in 0.7in;
+        background: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       }
+
+      /* Header */
       .name {
+        text-align: center;
         font-size: 22pt;
-        font-weight: 800;
-        letter-spacing: -0.02em;
-        line-height: 1;
+        font-weight: 700;
+        color: #1F3A68;
+        letter-spacing: 0.02em;
         margin: 0;
-        color: #09090b;
       }
       .role {
-        display: block;
-        margin-top: 2px;
-        font-size: 10pt;
-        font-weight: 600;
-        color: #3b82f6;
-        letter-spacing: 0.02em;
+        text-align: center;
+        font-size: 11pt;
+        font-weight: 700;
+        color: #000;
+        margin: 4px 0 2px;
       }
       .contact {
-        margin-top: 3px;
-        font-size: 8pt;
-        color: #4b5563;
+        text-align: center;
+        font-size: 9pt;
+        color: #000;
+        margin: 0 0 4px;
       }
       .contact a {
-        color: #4b5563;
-        text-decoration: none;
-      }
-      .contact .sep {
-        color: #d1d5db;
-        margin: 0 5px;
+        color: #1F3A68;
+        text-decoration: underline;
       }
 
+      /* Section heading — matches docx uppercase blue heading */
       h2.section {
-        font-size: 9pt;
+        font-size: 11pt;
         font-weight: 700;
-        letter-spacing: 0.18em;
+        color: #1F3A68;
         text-transform: uppercase;
-        color: #3b82f6;
-        margin: 7px 0 3px;
-        padding-bottom: 2px;
-        border-bottom: 1.5px solid #93c5fd;
+        margin: 14px 0 4px;
+        padding: 0 0 2px;
+        border-bottom: 1px solid #1F3A68;
       }
 
-      .summary {
-        margin: 0;
-        color: #18181b;
-      }
+      p.summary { margin: 4px 0 0; text-align: justify; }
 
-      .entry {
-        margin-top: 4px;
-      }
+      /* Job / project entry */
+      .entry { margin-top: 8px; }
       .entry-head {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        gap: 8px;
+        gap: 12px;
       }
-      .entry-title {
-        font-size: 9.5pt;
-        font-weight: 700;
-        color: #09090b;
-      }
-      .entry-sub {
-        font-size: 9pt;
-        color: #52525b;
-        font-weight: 500;
-      }
-      .entry-date {
-        font-size: 8pt;
-        color: #71717a;
-        font-weight: 500;
-        white-space: nowrap;
-      }
-      .entry ul {
-        margin: 1px 0 0 14px;
-        padding: 0;
-      }
-      .entry li {
-        margin: 0.5px 0;
-      }
+      .entry-title { font-size: 10.5pt; font-weight: 700; }
+      .entry-date { font-size: 10.5pt; font-weight: 700; white-space: nowrap; }
+      .entry-company { font-style: italic; font-size: 10.5pt; margin-top: 1px; }
 
-      .project {
-        margin-top: 3px;
+      ul {
+        margin: 4px 0 0;
+        padding-left: 22px;
       }
-      .project-line {
-        font-size: 9.5pt;
-      }
-      .project-name {
-        font-weight: 700;
-        color: #09090b;
-      }
-      .project-tech {
-        color: #71717a;
-        font-style: italic;
-      }
-      .project-desc {
-        margin: 1px 0 0;
-        color: #18181b;
-      }
+      li { margin: 2px 0; }
 
-      .skills {
-        margin-top: 3px;
-      }
-      .skill-row {
-        font-size: 9pt;
-        margin: 2px 0;
-      }
-      .skill-label {
-        display: inline-block;
-        width: 82px;
-        font-weight: 700;
-        color: #09090b;
-      }
+      /* Projects */
+      .project { margin-top: 8px; }
+      .project-title { font-size: 10.5pt; font-weight: 700; }
+      .project-meta { font-style: italic; font-size: 9pt; color: #000; margin-left: 6px; }
 
-      .two-col {
-        display: grid;
-        grid-template-columns: 1.05fr 1fr;
-        gap: 20px;
-      }
+      /* Skills */
+      .skill-row { margin: 3px 0; }
+      .skill-label { font-weight: 700; }
 
-      .edu-item,
-      .cert-item {
-        margin-top: 3px;
-        font-size: 9pt;
-      }
-      .cert-item b,
-      .edu-item b {
-        color: #09090b;
-      }
-      .cert-item .meta,
-      .edu-item .meta {
-        color: #71717a;
-        font-family: ui-monospace, 'JetBrains Mono', monospace;
-        font-size: 8pt;
-      }
-      .edu-item .right {
-        float: right;
-        color: #71717a;
-        font-size: 8.5pt;
-        font-weight: 500;
-      }
-
-      b.metric {
-        color: #1d4ed8;
-      }
+      /* Education */
+      .edu-item { margin: 3px 0; }
 
       @media print {
-        body {
-          background: #fff;
-          font-size: 8.8pt;
-        }
-        .toolbar {
-          display: none;
-        }
+        body { background: #fff; }
+        .toolbar { display: none; }
         .page {
           box-shadow: none;
           margin: 0;
-          padding: 0.3in 0.4in;
+          padding: 0;
           width: auto;
-          height: auto;
-          overflow: visible;
+          min-height: auto;
         }
-        @page {
-          size: A4;
-          margin: 0;
-        }
+        @page { size: A4; margin: 0.5in 0.6in; }
+        .entry, .project { page-break-inside: avoid; }
+        h2.section { page-break-after: avoid; }
       }
     </style>
   </head>
@@ -226,94 +128,97 @@
     <div class="toolbar">Web preview — the toolbar disappears when printed.</div>
 
     <div class="page">
-      <header class="head">
-        <h1 class="name">VANDANA</h1>
-        <span class="role">Full Stack Developer</span>
-        <div class="contact">
-          <a href="mailto:vandanakashyap674@gmail.com">vandanakashyap674@gmail.com</a>
-          <span class="sep">·</span>
-          +91-9781910246
-          <span class="sep">·</span>
-          Panchkula, India
-          <span class="sep">·</span>
-          <a href="https://vandana-portfolio-azure.vercel.app/">vandana-portfolio-azure.vercel.app</a>
-          <span class="sep">·</span>
-          <a href="https://github.com/Vandanarajput">github.com/Vandanarajput</a>
-          <span class="sep">·</span>
-          <a href="https://www.linkedin.com/in/vandana-rajput-213160277/">linkedin.com/in/vandana-rajput</a>
-        </div>
-      </header>
+      <h1 class="name">VANDANA</h1>
+      <div class="role">React.js Frontend Developer</div>
+      <div class="contact">
+        Panchkula, India &nbsp;|&nbsp;
+        <a href="tel:+919781910246">+91-9781910246</a> &nbsp;|&nbsp;
+        <a href="mailto:vandanakashyap674@gmail.com">vandanakashyap674@gmail.com</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/vandana-rajput11/">linkedin.com/in/vandana-rajput11</a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/Vandanarajput">github.com/Vandanarajput</a>
+      </div>
 
-      <h2 class="section">Summary</h2>
+      <h2 class="section">Professional Summary</h2>
       <p class="summary">
-        Full Stack Developer with 1+ year shipping React + Electron frontends and 6-month Java +
-        Spring Boot foundation. Comfortable end-to-end — React, Redux, Tailwind on the front;
-        Spring Boot, REST APIs, MySQL on the back. Currently architecting <b>MoBrowser</b> at
-        Techsapphire — an Electron developer browser with multi-database connectors and AES-256 security.
+        Frontend Developer with 1.5 years of experience (including internship) building
+        responsive, component-based web applications using React.js, JavaScript (ES6+), HTML5,
+        CSS3, and Tailwind CSS. Skilled in React Hooks for state management, integrating REST APIs,
+        and writing reusable UI components. Experienced in debugging, performance improvements,
+        and delivering features within Agile teams using Git and GitHub.
       </p>
 
       <h2 class="section">Experience</h2>
 
       <div class="entry">
         <div class="entry-head">
-          <div>
-            <span class="entry-title">Full Stack Developer</span> ·
-            <span class="entry-sub">Techsapphire Solutions Pvt. Ltd.</span>
-          </div>
-          <div class="entry-date">Jun 2025 — Present</div>
+          <span class="entry-title">Associate Software Developer</span>
+          <span class="entry-date">Jun 2025 &ndash; Present</span>
         </div>
+        <div class="entry-company">Techsapphire Solutions Pvt. Ltd.</div>
         <ul>
           <li>
-            Architecting <b>MoBrowser</b> — Electron desktop browser with native connectors for
-            MySQL, PostgreSQL, SQL Server, SQLite, and MongoDB.
+            Primary frontend developer on two in-house web products &mdash; a SQL client web
+            application and an offline-capable PDF reading and note-taking application &mdash;
+            built with React.js, JavaScript, and Tailwind CSS.
           </li>
           <li>
-            Built AES-256 credential vault over isolated Electron IPC; integrated GitHub sync,
-            thermal printing, and a background Windows scheduler service.
+            Build reusable React components, custom Hooks, and forms; integrate REST APIs for
+            data fetching, authentication, and updates.
           </li>
           <li>
-            Lead developer on a cross-platform Point of Sale application shipping to Android and
-            Windows desktop.
+            Manage application state using Redux and React Context; implement client-side routing
+            and role-based UI access.
           </li>
           <li>
-            Cut bundle size <b class="metric">~22%</b> by replacing third-party theme with React
-            Context API; reduced bug backlog <b class="metric">~60%</b> using Jest + RTL.
+            Improved product stability by adding unit tests for UI and application logic, reducing
+            the open bug backlog by ~60%.
+          </li>
+          <li>
+            Collaborate with developers and QA on a cross-platform Point of Sale application
+            (Android and Windows), building shared UI modules and coordinating feature scope in an
+            Agile environment.
+          </li>
+          <li>
+            Contribute to a company desktop browser product with additional in-app features
+            (secondary responsibility).
+          </li>
+          <li>
+            Use Git and GitHub for version control, branching, and collaborative code reviews.
           </li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <div>
-            <span class="entry-title">Full Stack Java Developer · Intern</span> ·
-            <span class="entry-sub">Pisoft Informatics Pvt. Ltd.</span>
-          </div>
-          <div class="entry-date">Jan 2025 — Jul 2025 · 6 mo</div>
+          <span class="entry-title">Full Stack Java Developer &ndash; Intern</span>
+          <span class="entry-date">Jan 2025 &ndash; Jul 2025 &middot; 6 mo</span>
         </div>
+        <div class="entry-company">PiSoft Informatics Pvt. Ltd.</div>
         <ul>
+          <li>Built end-to-end applications using Core Java, Spring Boot, Hibernate, and MySQL.</li>
           <li>
-            Built end-to-end applications with Core Java, Spring Boot, Hibernate, and MySQL — REST
-            API design and relational data modeling.
-          </li>
-          <li>
-            Developed frontends with Thymeleaf + jQuery; maintained <b class="metric">85%+</b>
-            unit test coverage on core modules.
+            Practiced debugging and root-cause analysis across the application stack,
+            strengthening core problem-solving fundamentals.
           </li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <div>
-            <span class="entry-title">Mobile App Development &amp; Testing · Intern</span> ·
-            <span class="entry-sub">Lending Buddha</span>
-          </div>
-          <div class="entry-date">Oct 2024 — Dec 2024 · 3 mo</div>
+          <span class="entry-title">Mobile App Development &amp; Testing &ndash; Intern</span>
+          <span class="entry-date">Oct 2024 &ndash; Dec 2024 &middot; 3 mo</span>
         </div>
+        <div class="entry-company">Lending Buddha</div>
         <ul>
           <li>
-            Hands-on mobile delivery lifecycle in Noida: app design, development, testing, and
-            debugging — foundation for the Android side of the POS app at Techsapphire.
+            Supported mobile application testing and debugging, gaining exposure to UI quality
+            assurance and the app delivery lifecycle.
+          </li>
+          <li>
+            Reported and tracked bugs through the QA cycle, working with the team to verify fixes
+            ahead of release.
           </li>
         </ul>
       </div>
@@ -321,100 +226,115 @@
       <h2 class="section">Projects</h2>
 
       <div class="project">
-        <div class="project-line">
-          <span class="project-name">MoBrowser — Enterprise Developer Browser</span>
-          <span class="project-tech"> · Electron · Node.js · 5 databases · AES-256 · Jest</span>
+        <div>
+          <span class="project-title">SQL Client Web Application</span>
+          <span class="project-meta">
+            (Proprietary &ndash; Techsapphire) &nbsp; React.js &middot; JavaScript &middot;
+            Tailwind CSS &middot; REST APIs
+          </span>
         </div>
-        <p class="project-desc">
-          Production Electron browser with native connectors for MySQL, PostgreSQL, SQL Server,
-          SQLite, MongoDB. OS-keychain credential vault, GitHub integration, thermal printing,
-          Windows scheduler service. Modular architecture with context-isolated IPC and auto-update.
-        </p>
+        <ul>
+          <li>
+            Built dashboards, data tables, forms, and modal dialogs for a web-based SQL client
+            using React.js and Tailwind CSS.
+          </li>
+          <li>
+            Implemented query result rendering, tab management, and data visualization widgets
+            with reusable, component-based architecture.
+          </li>
+          <li>
+            Wrote custom Hooks for data fetching, refresh, and keyboard shortcuts; added unit
+            tests for critical UI logic.
+          </li>
+        </ul>
       </div>
 
       <div class="project">
-        <div class="project-line">
-          <span class="project-name">ShopSphere — MERN E-Commerce Platform</span>
-          <span class="project-tech"> · React · Redux Toolkit · Node.js · Express · MongoDB · JWT · Cloudinary</span>
+        <div>
+          <span class="project-title">PDF Reading &amp; Note-Taking Web App</span>
+          <span class="project-meta">
+            (Proprietary &ndash; Techsapphire) &nbsp; React.js &middot; JavaScript &middot;
+            Tailwind CSS &middot; REST APIs
+          </span>
         </div>
-        <p class="project-desc">
-          Production-style e-commerce app covering the full customer journey (browse → cart →
-          checkout → order tracking) plus a complete admin panel. Atomic stock decrement prevents
-          overselling; cart price snapshots lock pricing between add-to-cart and checkout; MongoDB
-          text indexes power product search. JWT auth with role-based access (customer / admin /
-          superAdmin) and Cloudinary CDN for product images. Live: shopsphere-web.vercel.app ·
-          Code: github.com/Vandanarajput/ShopSphere-Ecommerce-website
-        </p>
+        <ul>
+          <li>
+            Built the split-pane UI (PDF viewer + note workspace) with highlighting, image
+            extraction, and a rich-text notes editor.
+          </li>
+          <li>
+            Implemented backup and restore, project management screens, document upload, and
+            responsive layouts for desktop and tablet.
+          </li>
+          <li>
+            Delivered offline-capable features with local storage and multi-project support for a
+            smoother user experience.
+          </li>
+        </ul>
       </div>
 
       <div class="project">
-        <div class="project-line">
-          <span class="project-name">Campus Placement Management</span>
-          <span class="project-tech"> · Spring Boot · Hibernate · Thymeleaf · MySQL</span>
+        <div>
+          <span class="project-title">ShopSphere &ndash; MERN E-Commerce Platform</span>
+          <span class="project-meta">
+            React.js &middot; Redux Toolkit &middot; Node.js &middot; Express &middot; MongoDB
+            &middot; JWT &middot; Tailwind CSS
+          </span>
         </div>
-        <p class="project-desc">
-          Placement lifecycle web app: student profiles, job listings, application tracking, and
-          admin panel. Spring Boot with Hibernate ORM and modular MVC structure.
-        </p>
+        <ul>
+          <li>
+            Built a full-stack e-commerce web app covering the complete customer journey &mdash;
+            browsing, cart, wishlist, checkout, and order tracking &mdash; plus a full admin
+            panel for products and orders.
+          </li>
+          <li>
+            Implemented JWT authentication with role-based access (customer / admin),
+            multi-address checkout, and order status tracking with a visual stepper.
+          </li>
+          <li>
+            Developed the backend with Node.js, Express, and MongoDB (Mongoose); built REST APIs
+            for products, cart, orders, reviews, and users.
+          </li>
+          <li>
+            Added product image uploads (up to 5 images), search and filters, and responsive UI
+            with Tailwind CSS.
+          </li>
+        </ul>
       </div>
 
       <h2 class="section">Technical Skills</h2>
-      <div class="skills">
-        <div class="skill-row">
-          <span class="skill-label">Languages</span>TypeScript, JavaScript (ES6+), Core Java, C++,
-          HTML5, CSS3
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Frameworks</span>React.js, Redux, Node.js, Express, Electron.js,
-          Spring Boot, Hibernate, Thymeleaf, jQuery, Tailwind
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Databases</span>MySQL, PostgreSQL, SQLite, MongoDB
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Tools</span>Git, GitHub, IntelliJ, Eclipse, VS Code, Postman,
-          Jest + RTL, Vite
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Concepts</span>OOP, MVC, REST APIs, Data Structures &amp;
-          Algorithms
-        </div>
+      <div class="skill-row">
+        <span class="skill-label">Languages:</span>
+        JavaScript (ES6+), HTML5, CSS3, Core Java, SQL
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Frontend:</span>
+        React.js, React Hooks, Vue.js, Tailwind CSS, Bootstrap, Responsive Web Design
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Other Frameworks:</span>
+        Spring Boot, Hibernate
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Tools:</span>
+        Git, GitHub, VS Code, Postman, npm, Chrome DevTools
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Concepts:</span>
+        Component-Based Architecture, State Management, REST API Integration, Debugging,
+        Performance Optimization, Agile / Scrum
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Soft Skills:</span>
+        Team Collaboration, Communication, Problem-Solving, Time Management
       </div>
 
-      <div class="two-col">
-        <div>
-          <h2 class="section">Education</h2>
-          <div class="edu-item">
-            <span class="right">2023 — 2025</span>
-            <b>MCA</b> — Mata Gujri College, Fatehgarh Sahib<br />
-            <span class="meta">CGPA 9.0 / 10</span>
-          </div>
-          <div class="edu-item">
-            <span class="right">2020 — 2023</span>
-            <b>BCA</b> — Punjabi University, Patiala<br />
-            <span class="meta">85%</span>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="section">Certifications</h2>
-          <div class="cert-item">
-            <b>Full Stack Java — Internship</b> · Pisoft · Jul 2025<br />
-            <span class="meta">PIPL/Tr/2025-26/00280</span>
-          </div>
-          <div class="cert-item">
-            <b>Mobile App Dev &amp; Testing</b> · Lending Buddha · Dec 2024<br />
-            <span class="meta">CK8URW93RQJYXV4F</span>
-          </div>
-          <div class="cert-item">
-            <b>Java Programming</b> · Udemy · 42 hrs · Mar 2025<br />
-            <span class="meta">UC-2cb95a7d-89ce-4648-baa5-059b62d87266</span>
-          </div>
-          <div class="cert-item">
-            <b>Flutter for Beginners</b> · Great Learning · Oct 2024<br />
-            <span class="meta">XAHNCFRK</span>
-          </div>
-        </div>
+      <h2 class="section">Education</h2>
+      <div class="edu-item">
+        MCA &ndash; Mata Gujri College, Fatehgarh Sahib (CGPA: 9.0/10), 2023&ndash;2025
+      </div>
+      <div class="edu-item">
+        BCA &ndash; Punjabi University, Patiala (85%), 2020&ndash;2023
       </div>
     </div>
   </body>

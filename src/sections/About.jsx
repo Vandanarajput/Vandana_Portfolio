@@ -15,19 +15,19 @@ const capabilities = [
     icon: Monitor,
     label: 'Frontend',
     accent: 'from-cyan-400 to-blue-500',
-    items: ['React.js', 'JavaScript', 'Redux', 'Context API', 'Tailwind CSS'],
+    items: ['React.js', 'React Hooks', 'JavaScript (ES6+)', 'Tailwind CSS', 'Responsive UI'],
   },
   {
     icon: Server,
-    label: 'Backend',
+    label: 'State & APIs',
     accent: 'from-blue-500 to-violet-500',
-    items: ['Java', 'Spring Boot', 'Hibernate', 'REST APIs', 'MVC'],
+    items: ['Redux', 'Context API', 'REST API Integration', 'Client-side Routing', 'Role-based UI'],
   },
   {
     icon: Database,
-    label: 'Desktop & Data',
+    label: 'Craft & Workflow',
     accent: 'from-violet-500 to-fuchsia-500',
-    items: ['Electron.js', 'IPC · AES-256', 'MySQL', 'PostgreSQL', 'MongoDB'],
+    items: ['Component Architecture', 'Custom Hooks', 'Unit Testing', 'Git & GitHub', 'Agile / Scrum'],
   },
 ]
 
@@ -56,32 +56,33 @@ export default function About() {
             />
 
             <p className="relative text-2xl font-bold leading-snug tracking-tight text-zinc-50 sm:text-3xl">
-              End-to-end developer. <span className="gradient-text">React</span> on the front.{' '}
-              <span className="gradient-text">Spring Boot</span> on the back.
+              Frontend developer. <span className="gradient-text">React.js</span>,{' '}
+              <span className="gradient-text">JavaScript</span>, and{' '}
+              <span className="gradient-text">Tailwind</span> — every day.
             </p>
 
             <div className="relative mt-6 space-y-4 text-base leading-relaxed text-zinc-300">
               <p>
-                I started with a{' '}
-                <span className="text-zinc-50 font-medium">6-month Java internship</span> at Pisoft
-                Informatics, building end-to-end apps with Spring Boot, Hibernate, and MySQL.
-                Before that, a 3-month mobile internship at Lending Buddha gave me my first
-                exposure to app design and testing.
+                I build responsive, component-based web applications with{' '}
+                <span className="text-zinc-50 font-medium">React.js</span>, JavaScript (ES6+),
+                HTML5, CSS3, and Tailwind CSS. My day-to-day is reusable components, React Hooks,
+                Redux and Context for state, and clean REST API integration.
               </p>
               <p>
-                Today I work at <span className="text-zinc-50 font-medium">Techsapphire</span> as
-                the lead developer on a Point of Sale app shipping to Android and Windows
-                desktop — and I'm architecting{' '}
-                <span className="text-zinc-50 font-medium">MoBrowser</span>, an Electron developer
-                browser with native connectors for five databases, an AES-256 credential vault,
-                and a background Windows service.
+                Today I'm at <span className="text-zinc-50 font-medium">Techsapphire</span> as an
+                Associate Software Developer — primary frontend on two in-house web products, a{' '}
+                <span className="text-zinc-50 font-medium">SQL client web app</span> and an
+                offline-capable{' '}
+                <span className="text-zinc-50 font-medium">PDF reading & note-taking app</span>.
+                Before that I did a 6-month full-stack Java internship at PiSoft (Spring Boot +
+                Hibernate + MySQL) and a 3-month mobile testing internship at Lending Buddha.
               </p>
               <p>
-                I care about full-stack craftsmanship — clean components, fast load times, honest
-                tests, and not adding a dependency I can write in twenty lines. Recent wins: cut
-                bundle size <span className="gradient-text font-semibold">~22%</span>, reduced
-                bug backlog <span className="gradient-text font-semibold">~60%</span>, improved
-                load time <span className="gradient-text font-semibold">~30%</span>.
+                I care about UI craftsmanship — clean components, honest unit tests, and shipping
+                inside Agile teams using Git and GitHub. Recent win at Techsapphire: reduced the
+                open bug backlog by{' '}
+                <span className="gradient-text font-semibold">~60%</span> with unit tests on
+                critical UI and application logic.
               </p>
             </div>
           </div>
@@ -100,7 +101,7 @@ export default function About() {
                 </span>
                 <div>
                   <div className="text-xs uppercase tracking-[0.14em] text-zinc-500">Role</div>
-                  <div className="text-sm font-semibold text-zinc-100">Full Stack Developer</div>
+                  <div className="text-sm font-semibold text-zinc-100">Associate Software Developer</div>
                   <div className="text-xs text-zinc-400">Techsapphire · Jun 2025 — Present</div>
                 </div>
               </li>
@@ -111,8 +112,8 @@ export default function About() {
                 </span>
                 <div>
                   <div className="text-xs uppercase tracking-[0.14em] text-zinc-500">Building</div>
-                  <div className="text-sm font-semibold text-zinc-100">MoBrowser · POS App</div>
-                  <div className="text-xs text-zinc-400">Electron · Android · Windows</div>
+                  <div className="text-sm font-semibold text-zinc-100">SQL Client · PDF Notes App</div>
+                  <div className="text-xs text-zinc-400">React.js · JavaScript · Tailwind</div>
                 </div>
               </li>
 

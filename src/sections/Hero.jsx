@@ -38,7 +38,7 @@ export default function Hero() {
             className="text-5xl font-extrabold leading-[1.05] tracking-tight text-zinc-50 sm:text-6xl lg:text-7xl"
           >
             <span className="gradient-text bg-[length:200%_auto] animate-gradient-shift">
-              Full Stack Developer
+              React.js Frontend Developer
             </span>
           </motion.h1>
 
@@ -49,8 +49,8 @@ export default function Hero() {
             className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05]"
           >
             {[
-              { value: '1+', label: 'Year Experience' },
-              { value: '4+', label: 'Projects Built' },
+              { value: '1.5', label: 'Years Experience' },
+              { value: '3+', label: 'Projects Shipped' },
               { value: '4', label: 'Certifications' },
             ].map((s) => (
               <div key={s.label} className="bg-bg/80 px-4 py-4 sm:px-6 sm:py-5">
@@ -70,8 +70,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-8 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg"
           >
-            Building end-to-end web and desktop applications — React + Electron on the front,
-            Spring Boot REST APIs and MySQL data models on the back.
+            Building responsive, component-based web applications with React.js, JavaScript,
+            and Tailwind CSS — reusable components, React Hooks, Redux, and clean REST API
+            integration.
           </motion.p>
 
           <motion.div
