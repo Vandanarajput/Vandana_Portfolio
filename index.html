@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Vandana_Portfolio/favicon.svg" />
@@ -18,10 +18,19 @@
       rel="stylesheet"
     />
     <title>Vandana · React.js Frontend Developer</title>
-    <script type="module" crossorigin src="/Vandana_Portfolio/assets/index-CMx71ExC.js"></script>
-    <link rel="stylesheet" crossorigin href="/Vandana_Portfolio/assets/index-BncgmIQ2.css">
+    <script type="module" crossorigin src="/Vandana_Portfolio/assets/index-pHz_368y.js"></script>
+    <link rel="stylesheet" crossorigin href="/Vandana_Portfolio/assets/index-Bwfjjho7.css">
   </head>
   <body class="antialiased">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          if (t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) { document.documentElement.classList.add('dark'); }
+      })();
+    </script>
     <div id="root"></div>
   </body>
 </html>
