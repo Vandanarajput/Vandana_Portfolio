@@ -5,13 +5,12 @@ import { projects } from '../data/projects'
 
 export default function Work() {
   return (
-    <section id="projects" className="container-px py-12 sm:py-16">
+    <section id="projects" className="container-px pt-6 pb-12 sm:pt-8 sm:pb-16">
       <Reveal>
-        <div className="mb-12 text-center">
+        <div className="mb-8 text-center">
           <h2 className="text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">
             Featured Projects
           </h2>
-          <p className="mt-3 text-base text-zinc-400">Some of my recent work</p>
         </div>
       </Reveal>
 

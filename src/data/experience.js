@@ -3,7 +3,7 @@ import { Terminal, Code, Smartphone } from 'lucide-react'
 export const experience = [
   {
     role: 'Associate Software Developer',
-    company: 'Techsapphire Solutions Pvt. Ltd.',
+    company: 'Techsapphire',
     period: 'Jun 2025 — Present',
     bullets: [
       'Primary frontend developer on two in-house web products — a SQL client web application and an offline-capable PDF reading & note-taking application — built with React.js, JavaScript, and Tailwind CSS.',

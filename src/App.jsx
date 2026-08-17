@@ -1,6 +1,5 @@
 import Nav from './components/Nav'
 import ScrollProgress from './components/ScrollProgress'
-import CursorDot from './components/CursorDot'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
@@ -15,7 +14,6 @@ export default function App() {
   return (
     <>
       <ScrollProgress />
-      <CursorDot />
       <Nav />
       <main className="relative">
         <Hero />

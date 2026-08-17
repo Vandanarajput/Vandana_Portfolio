@@ -5,9 +5,9 @@ import { certifications } from '../data/certifications'
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="container-px py-12 sm:py-16">
+    <section id="certifications" className="container-px pt-6 pb-12 sm:pt-8 sm:pb-16">
       <Reveal>
-        <div className="mb-12 flex items-center gap-3">
+        <div className="mb-8 flex items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-blue-600/30 to-violet-600/30 text-violet-300">
             <Award className="h-5 w-5" />
           </span>
